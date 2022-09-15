@@ -1,13 +1,14 @@
-<!--- A0 B2 C1 D1  E2
-       G0 go H2 I1
-	   M0 N2
-	   O1---!>
+
 	   
 	   
 	   
 	   
 <?php
-
+     
+if(isset($_POST['txtno']))
+ {	   
+    $no=$_POST['txtno'];
+   
         $count=1;
 		$count1=0;
 		$a=0;
@@ -19,7 +20,7 @@
 		$l=65;
 
   
-		for ($i=5;$i>=1;$i--)
+		for ($i=$no;$i>=1;$i--)
 		{
 			for($j=1;$j<=$i;$j++)
 			{	
@@ -67,12 +68,17 @@
 			    echo "<br>";
 				
 		}
-?>		
 		
+ }	
 		
-		  
+?>		  
  
-
+<form action="pyramid1.php" method="POST">
+         <input type="text" name="txtno">
+         <input type="submit" value="display">
+ </form>		 
+      
+      
 	  
 	  
 	  	   

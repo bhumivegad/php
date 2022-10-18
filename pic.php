@@ -19,8 +19,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js"></script>
 </head>
  <form action="pic.php" method="POST" enctype="multipart/form-data">
-<input type="file" name="picture" accept=".jpg ,.png,.jpeg">
-<input type ="submit" value="save">
+<input type="file" name="picture" accept=".jpg ,.png,.jpeg"></br>
+<input type ="submit" class="btn btn-primary" value="save">
 
 </form>
 <table class="table table-bordered text-center ">
